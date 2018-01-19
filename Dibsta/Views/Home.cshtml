@@ -4,6 +4,13 @@
 }
 
 @* the fun starts here *@
-
-@Umbraco.Field("pageTitle")
-@Umbraco.Field("pageRTE")
+<div class="ui grid">
+    <div class="eight wide column">
+        @Umbraco.Field("pageTitle")
+    </div>
+    <div class="eight wide column">
+        @Umbraco.Field("pageRTE")
+    </div>
+    <h1>@Umbraco.Field("pageTitle")</h1>
+    @Umbraco.Field("pageRTE")
+</div>
